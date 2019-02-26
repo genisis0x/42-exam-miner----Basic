@@ -20,7 +20,7 @@ int is_pair(char c, char d)
 int ft_brackets (char *str)
 {
 	int j = 0;
-	int stack[2048];
+	int stack[BUFF_SIZE];
 	int position = 0;
 	while (str[j])
 	{
