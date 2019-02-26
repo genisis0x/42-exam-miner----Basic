@@ -25,7 +25,8 @@ void ft_putchar(char c)
 {
 	if (c >= 32 && c <= 127)
 		write(1, &c, 1);
-	write (1, ".", 1);
+	else
+		write (1, ".", 1);
 }
 
 void	print_memory(const void *addr, size_t size)
