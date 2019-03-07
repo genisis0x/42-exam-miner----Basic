@@ -12,7 +12,7 @@
 
 #include "unistd.h"
 
-void ft_print_hex(int x)
+void ft_print_hex(int x) // Hexadecimal value of int 
 {
 	char *base = "0123456789abcdef";
 
@@ -21,7 +21,7 @@ void ft_print_hex(int x)
 }
 
 
-void ft_putchar(char c)
+void ft_putchar(char c) // Ascii value of int
 {
 	if (c >= 32 && c <= 127)
 		write(1, &c, 1);
@@ -31,22 +31,22 @@ void ft_putchar(char c)
 
 void	print_memory(const void *addr, size_t size)
 {
-	size_t i = 0;
-	size_t j;
+	size_t i = 0; // counter for size
+	size_t j; // counter for each 16 bytes
 
 	unsigned char const *p = addr;
 
 	while (i < size)
 	{
 		j = 0;
-		while ( j < 16 && i + j < size)
+		while ( j < 16 && i + j < size) // to print each Byte at a time. 
 		{
 			ft_print_hex(*(p + i + j));
 			if (j % 2)
 				write (1, " ", 1);
 			j++;
 		}
-		while ( j < 16)
+		while ( j < 16) // to print the unitilized int's
 		{
 			write (1, "  ", 2);
 			if (j % 2)
@@ -54,7 +54,7 @@ void	print_memory(const void *addr, size_t size)
 			j++;
 		}
 		j = 0;
-		while (j < 16 && i + j < size)
+		while (j < 16 && i + j < size) // to print the Ascii values of the given it
 		{
 			ft_putchar(*(p + i + j));
 			j++;
