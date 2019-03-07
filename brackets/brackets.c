@@ -20,14 +20,14 @@ int is_pair(char c, char d)
 int ft_brackets (char *str)
 {
 	int j = 0;
-	int stack[BUFF_SIZE];
-	int position = 0;
+	int stack[BUFF_SIZE]; // int array stack implemantation used for push and pop operation
+	int position = 0; // initial position of the top of the stack 
 	while (str[j])
 	{
-		if (str[j]== '(' || str[j] == '{' || str[j] == '[')
+		if (str[j]== '(' || str[j] == '{' || str[j] == '[') // push operation to check the opening bracket
 			stack[++position] = str[j];
-		if (str[j]== ')' || str[j] == '}' || str[j] == ']')
-			if (!(is_pair(stack[position--], str[j])))
+		if (str[j]== ')' || str[j] == '}' || str[j] == ']') // pop operation to check the closing bracket
+			if (!(is_pair(stack[position--], str[j]))) // check if the pair is valid or not 
 				return (0);
 		j++;
 	}
