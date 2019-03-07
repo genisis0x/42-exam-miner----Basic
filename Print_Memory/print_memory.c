@@ -23,7 +23,7 @@ void ft_print_hex(int x) // Hexadecimal value of int
 
 void ft_putchar(char c) // Ascii value of int
 {
-	if (c >= 32 && c <= 127)
+	if (c >= 32 && c <= 127) // printable Ascii
 		write(1, &c, 1);
 	else
 		write (1, ".", 1);
