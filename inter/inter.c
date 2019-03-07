@@ -16,18 +16,18 @@ void ft_inter(char *a, char *b)
 {
 	int i = 0;
 	char arr[127];
-	while (b[i])
+	while (b[i]) // initilize all the index of the arr to offset (1) which exist in b string.
 	{
 		arr[(int)b[i]] = 1;
 		i++;	
 	}
 	i = 0;
-	while (a[i])
+	while (a[i]) // check all the index of the arr if it's offset (1) or not 
 	{
 		if(arr[(int)a[i]])
 		{
 			write(1, &a[i], 1);
-			arr[(int)a[i]] = 0;
+			arr[(int)a[i]] = 0; // reset the offset (0)
 		}
 		i++;
 	}
