@@ -24,9 +24,7 @@ int		ft_atoi_base(const char *str, int str_base)
 	unsigned int nb = 0;
 	
 	while (str[i] == ' ')
-	{
 		i++;
-	}
 	if (str[i] == '-' || str[i] == '+')
 	{
 		if (str[i] == '-')
@@ -36,17 +34,11 @@ int		ft_atoi_base(const char *str, int str_base)
 	while (is_correct(str[i]) && (str_base <= 16) && str[i] != 0)
 	{
 		if(str[i] >= '0' && str[i] <= '9')
-		{
 			nb = nb *str_base + str[i] - '0';
-		}
 		if ((str[i] >= 'A' && str[i] <= 'F') && (abs(str_base) >= 11))
-		{
 			nb = nb *str_base + str[i] - 'A' + 10;
-		}
 		if ((str[i] >= 'a' && str[i] <= 'z') && (abs(str_base) >= 11))
-		{
 			nb = nb *str_base + str[i] - 'a' + 10;
-		}
 		i++;
 	}
 	return (nb * sign);
