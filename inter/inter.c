@@ -22,7 +22,7 @@ void ft_inter(char *a, char *b)
 		i++;	
 	}
 	i = 0;
-	while (a[i]) // check all the index of the arr if it's offset (1) or not 
+	while (a[i]) // check all the index of the arr if it's offset (1) or (0)
 	{
 		if(arr[(int)a[i]])
 		{
