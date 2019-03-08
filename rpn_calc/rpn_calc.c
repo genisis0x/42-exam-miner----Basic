@@ -75,7 +75,7 @@ int ft_rpn(char *str) // main rpn cal function
 			;
 		else if (!ft_space(str[i]) && ft_num(str[i]))
 			push(ft_atoi(str[i]));
-		else if (!ft_space(str[i]) && is_operator(str[i])) // operation for the single element 
+		else if (!ft_space(str[i]) && is_operator(str[i])) // operation for the single pair of elements
 		{
 			int op2 = pop();
 			int op1 = pop();
