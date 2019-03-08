@@ -10,12 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdio.h>
-#define STK_SIZE 2048
+#define STK_SIZE 2048 // max stack size 
 
 int top = -1;
-int stack[STK_SIZE];
+int stack[STK_SIZE]; 
 
-void push(int item)
+void push(int item) // push function to implentation of stack
 {
 	if (top != 2047)
 	{
@@ -25,7 +25,7 @@ void push(int item)
 		return ;
 }
 
-char pop()
+int pop() // pop function to implentation of stack 
 {
 	if (top == -1)
 	{
@@ -35,24 +35,24 @@ char pop()
 		return (stack[top--]);
 }
 
-int ft_atoi(char e)
+int ft_atoi(char e) // atoi to convert to char to int
 {
 	return (e - '0');
 }
 
-int ft_space(char c)
+int ft_space(char c) 
 {
    	return (c == ' ');
 }
-int is_operator(char c)
+int is_operator(char c) // check valid opertaor
 {
 	return (c == '*' || c == '/' || c == '%' || c == '+' || c == '-');
 }
-int ft_num(char c)
+int ft_num(char c) // valid number between with 0 and 9 
 {
 	return (c >= '0' && c <= '9');
 }
-int do_op(char c, char d, char op)
+int do_op(char c, char d, char op) // operation function
 {
 	if (op == '*')
 		return (ft_atoi(c) * ft_atoi(d));
@@ -66,7 +66,7 @@ int do_op(char c, char d, char op)
 		return (ft_atoi(c) - ft_atoi(d));
 	return (0);
 }
-int ft_rpn(char *str)
+int ft_rpn(char *str) // main rpn cal function
 {
 	int i = 0;
 	while (str[i])
@@ -75,7 +75,7 @@ int ft_rpn(char *str)
 			;
 		else if (!ft_space(str[i]) && ft_num(str[i]))
 			push(ft_atoi(str[i]));
-		else if (!ft_space(str[i]) && is_operator(str[i]))
+		else if (!ft_space(str[i]) && is_operator(str[i])) // operation for the single element 
 		{
 			int op2 = pop();
 			int op1 = pop();
