@@ -26,7 +26,7 @@ int ft_brackets (char *str)
 	{
 		if (str[j]== '(' || str[j] == '{' || str[j] == '[') // push operation to check the opening bracket
 			stack[++position] = str[j];
-		if (str[j]== ')' || str[j] == '}' || str[j] == ']') // pop operation to check the closing bracket
+		if (str[j]== ')' || str[j] == '}' || str[j] == ']') // operation to check the closing bracket
 			if (!(is_pair(stack[position--], str[j]))) // check if the pair is valid or not 
 				return (0);
 		j++;
