@@ -6,7 +6,7 @@
 /*   By: maparmar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/07 23:41:58 by maparmar          #+#    #+#             */
-/*   Updated: 2019/03/07 23:58:15 by maparmar         ###   ########.fr       */
+/*   Updated: 2019/03/08 00:00:28 by maparmar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdio.h>
@@ -50,7 +50,7 @@ int is_operator(char c) // check valid opertaor
 }
 int ft_num(char c) // valid number between with 0 and 9 
 {
-	return ((c % 9) >= '0' && (c % 9) <= '9');
+	return ((c) >= '0' && (c) <= '9');
 }
 int do_op(char c, char d, char op) // operation function
 {
