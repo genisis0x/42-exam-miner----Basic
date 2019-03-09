@@ -1,21 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rpn_calc.c                                         :+:      :+:    :+:   */
+/*   rpncal.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: maparmar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/03/07 23:41:58 by maparmar          #+#    #+#             */
-/*   Updated: 2019/03/08 00:00:28 by maparmar         ###   ########.fr       */
+/*   Created: 2019/03/07 22:33:22 by maparmar          #+#    #+#             */
+/*   Updated: 2019/03/08 20:28:20 by maparmar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <unistd.h>
 #include <stdio.h>
-#define STK_SIZE 2048 // max stack size 
+#define STK_SIZE 2048
+#include <stdlib.h>
 
 int top = -1;
-int stack[STK_SIZE]; 
+int stack[STK_SIZE];
 
-void push(int item) // push function to implentation of stack
+void push(int item)
 {
 	if (top != 2047)
 	{
@@ -25,7 +28,7 @@ void push(int item) // push function to implentation of stack
 		return ;
 }
 
-int pop() // pop function to implentation of stack 
+char pop()
 {
 	if (top == -1)
 	{
@@ -35,55 +38,55 @@ int pop() // pop function to implentation of stack
 		return (stack[top--]);
 }
 
-int ft_atoi(char e) // atoi to convert to char to int
-{
-	return (e - '0');
-}
-
-int ft_space(char c) 
+int ft_space(char c)
 {
    	return (c == ' ');
 }
-int is_operator(char c) // check valid opertaor
+int is_operator(char c)
 {
 	return (c == '*' || c == '/' || c == '%' || c == '+' || c == '-');
 }
-int ft_num(char c) // valid number between with 0 and 9 
+int ft_num(char c)
 {
-	return ((c) >= '0' && (c) <= '9');
+	return (c >= '0' && c <= '9');
 }
-int do_op(char c, char d, char op) // operation function
+int do_op(int c, int d, char op)
 {
 	if (op == '*')
-		return (ft_atoi(c) * ft_atoi(d));
+		return (c * d);
 	else if (op == '/')
-		 return (ft_atoi(c) / ft_atoi(d));
+		 return (c / d);
 	else if (op == '%')
-		return (ft_atoi(c) % ft_atoi(d));
+		return (c % d);
 	else if (op == '+')
-		return (ft_atoi(c) + ft_atoi(d));
+		return (c + d);
 	else if (op == '-')
-		return (ft_atoi(c) - ft_atoi(d));
+		return (c - d);
 	return (0);
 }
-int ft_rpn(char *str) // main rpn cal function
+int ft_rpn(char *str)
 {
-	int i = 0;
-	while (str[i])
+	while (*str)
 	{
-		if (ft_space(str[i]))
+		if (ft_space(*str))
 			;
-		else if (!ft_space(str[i]) && ft_num(str[i]))
-			push(ft_atoi(str[i]));
-		else if (!ft_space(str[i]) && is_operator(str[i])) // operation for the single pair of elements
+		else if (!ft_space(*str) && ft_num(*str))
+		{
+			push(atoi(str));
+			while (ft_num(*str))
+			{
+				str++;
+			}
+		}
+		else if (!ft_space(*str) && is_operator(*str))
 		{
 			int op2 = pop();
 			int op1 = pop();
-			int op = str[i];
+			char op = *str;
 			int result = do_op(op1, op2, op);
 			push(result);
 		}
-		i++;
+		str++;
 	}
 	return (top == 0) ? 1 : 0;
 }
