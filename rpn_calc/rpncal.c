@@ -15,12 +15,12 @@
 #define STK_SIZE 2048
 #include <stdlib.h>
 
-int top = -1;
+int top = -1; // top of the stack
 int stack[STK_SIZE];
 
 void push(int item)
 {
-	if (top != 2047)
+	if (top != 2047) // check overflow condition
 	{
 		stack[++top] = item;
 	}
@@ -30,7 +30,7 @@ void push(int item)
 
 char pop()
 {
-	if (top == -1)
+	if (top == -1) // check under flow condition
 	{
 		return (0);
 	}
@@ -40,9 +40,9 @@ char pop()
 
 int ft_space(char c)
 {
-   	return (c == ' ');
+	return (c == ' ');
 }
-int is_operator(char c)
+int is_operator(char c) // valid operator
 {
 	return (c == '*' || c == '/' || c == '%' || c == '+' || c == '-');
 }
@@ -50,7 +50,7 @@ int ft_num(char c)
 {
 	return (c >= '0' && c <= '9');
 }
-int do_op(int c, int d, char op)
+int do_op(int c, int d, char op) // operation performing function
 {
 	if (op == '*')
 		return (c * d);
@@ -64,7 +64,7 @@ int do_op(int c, int d, char op)
 		return (c - d);
 	return (0);
 }
-int ft_rpn(char *str)
+int ft_rpn(char *str) // rpn driver
 {
 	while (*str)
 	{
@@ -78,7 +78,7 @@ int ft_rpn(char *str)
 				str++;
 			}
 		}
-		else if (!ft_space(*str) && is_operator(*str))
+		else if (!ft_space(*str) && is_operator(*str)) // calculate and store result in stack
 		{
 			int op2 = pop();
 			int op1 = pop();
@@ -88,7 +88,7 @@ int ft_rpn(char *str)
 		}
 		str++;
 	}
-	return (top == 0) ? 1 : 0;
+	return (top == 0) ? 1 : 0; // if the given expression is valid or not
 }
 int main (int ac, char **av)
 {
