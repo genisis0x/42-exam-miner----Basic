@@ -92,7 +92,7 @@ int ft_rpn(char *str)
 		}
 		str++;
 	}
-	return (top == 0 && i >= 2 && j >= 1) ? 1 : 0;
+	return (top == 0 && j - i = 1 && j != 0 && i != 0) ? 1 : 0;
 }
 int main (int ac, char **av)
 {
