@@ -28,7 +28,7 @@ void push(int item)
 		return ;
 }
 
-char pop()
+int pop()
 {
 	if (top == -1) // check under flow condition
 	{
