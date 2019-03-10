@@ -10,10 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*************************************************Not good solution but just a practice of recursion in a base question****************/
+
 #include <unistd.h>
 #include <stdio.h>
 
-void swap(char *a, char *b)
+void swap(char *a, char *b) // swap function for swaping the char
 {
 	char temp;
 	temp = *a;
@@ -21,9 +23,9 @@ void swap(char *a, char *b)
 	*b = temp;
 }
 
-void ft_print(char *str, int start, int end)
+void ft_print(char *str, int start, int end) // driver function
 {
-	if (start == end || start - end == 1)
+	if (start == end || start - end == 1) // both case when the length is odd and even and the whole string is reversed  
 	{
 		while (*str)
 		{
@@ -33,12 +35,12 @@ void ft_print(char *str, int start, int end)
 	}
 	else
 	{
-		swap(&str[start++], &str[end--]);
-		ft_print(str, start, end);
+		swap(&str[start++], &str[end--]); // swap start and end and move forward
+		ft_print(str, start, end); // call recursively the function and move to the next index.
 	}
 }
 
-int ft_strlen(char *str)
+int ft_strlen(char *str) // length of string
 {
 	int i = 0;
 	while (*str)
@@ -48,7 +50,7 @@ int ft_strlen(char *str)
 	}
 	return (i);
 }
-int main (int ac, char **av)
+int main (int ac, char **av) // main driver
 {
 	if (ac == 2)
 	{
