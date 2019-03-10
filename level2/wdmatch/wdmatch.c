@@ -14,18 +14,18 @@
 
 void ft_wdmatch(char *a, char *b)
 {
-	int j = 0;
-	int i = 0;
+	int j = 0; // counter for second string
+	int i = 0; // counter for first string
 
 	while ((a[i] && b[j]) != 0)
 	{
-		if (a[i] == b[j])
+		if (a[i] == b[j]) // if char in both the strings are same then proceed further
 		{
 			i++;
 			j++;
-			if (a[i] == '\0')
+			if (a[i] == '\0') // check if we reached the end point of first string
 			{
-				while (*a)
+				while (*a) // print the whole string
 				{
 					write (1, a, 1);
 					a++;
@@ -38,7 +38,7 @@ void ft_wdmatch(char *a, char *b)
 	}
 }
 
-int main (int ac, char **av)
+int main (int ac, char **av) // main driver function
 {
 	if (ac == 3)
 	{
