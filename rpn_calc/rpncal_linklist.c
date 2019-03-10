@@ -21,7 +21,7 @@
 typedef struct node 
 {
 	int				data;
-	struct	node	*next;
+	struct	node			*next;
 }					t_list;
 
 t_list *head; // top of the stack which will be null in the starting.
@@ -93,8 +93,8 @@ int do_op(int c, int d, char op) // operation function
 
 int ft_rpn(char *str) // driver function 
 {
-	int i = 0;
-	int j = 0;
+	int i = 0; // used to count spaces.
+	int j = 0; // used to count operand and operator's.
 	while (*str)
 	{
 		if (ft_space(*str))
