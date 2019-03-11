@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdlib.h>
-#define abs(v) v < 0 ? -v : v // abs function to calculate the Absolute value
+#define abs(v) (v) < 0 ? -(v) : (v) // abs function to calculate the Absolute value
 
 void ib(int n, int b, char *res, int *p)
 {
@@ -36,6 +36,7 @@ char *ft_itoa_base(int value, int base)
 	return (res);
 }
 
+/*
 #include <stdio.h>
 
 int main (int ac, char **av)
@@ -45,4 +46,4 @@ int main (int ac, char **av)
 		printf("%s",ft_itoa_base(atoi(av[1]), atoi(av[2])));
 	}
 	return (0);
-}
+}/*
