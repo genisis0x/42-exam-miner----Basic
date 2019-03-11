@@ -16,9 +16,8 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdlib.h>
 
-typedef struct node 
+typedef struct node
 {
 	int				data;
 	struct	node			*next;
@@ -91,16 +90,29 @@ int do_op(int c, int d, char op) // operation function
 
 /* check function complete*/
 
-int ft_rpn(char *str) // driver function 
+int ft_rpn(char *str) // driver function
 {
-	int i = 0; // used to count spaces.
-	int j = 0; // used to count operand and operator's.
+	int i = 0; // used to count total no of spaces.
+	int j = 0; // used to count total no of operand and operator's.
+	int flag = 1;
+	while (ft_space(*str))
+		str++;
 	while (*str)
 	{
-		if (ft_space(*str))
+		if (ft_space(*str) && !ft_space(*(str + 1)) && flag == 1 && *(str + 1) != 0)
 			i++;
+		else if (ft_space(*str))
+		{
+			if (flag == 1 && !ft_space(*(str + 1)) && *(str + 1) != 0)
+			{
+				i++;
+				flag = 0;
+			}
+			;
+		}
 		else if (!ft_space(*str) && ft_num(*str)) // push when str is a operand
 		{
+			flag = 1;
 			push(atoi(str));
 			j++;
 			while (ft_num(*str))
@@ -111,7 +123,12 @@ int ft_rpn(char *str) // driver function
 		}
 		else if (!ft_space(*str) && is_operator(*str)) // pop and store the result in stack when the str is operator.
 		{
+			flag = 1;
+			if (head == NULL)
+				return 0;
 			int op2 = pop();
+			if (head == NULL)
+				return 0;
 			int op1 = pop();
 			char op = *str;
 			int result = do_op(op1, op2, op);
@@ -120,7 +137,7 @@ int ft_rpn(char *str) // driver function
 		}
 		str++;
 	}
-	return (head->next == NULL && j - i == 1 && j != 0 && i != 0) ? 1 : 0; // i & j are the values of spaces and operators and operand.
+	return (head->next == NULL && (j - i) == 1 && j != 0 && i != 0) ? 1 : 0; // i & j are the values of spaces and operators and operand.
 }
 
 int main (int ac, char **av) // Main driver
