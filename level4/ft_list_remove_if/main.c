@@ -10,6 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/******************** Test case for more infor use LLDB*********************/
 
 #include "ft_list.h"
 #include <stdio.h>
@@ -61,7 +62,7 @@ int main (void)
 	printf("\n");
 	int (*cmp)() = &ft_compare;
 	ft_list_remove_if(&head, &arr[0], cmp);
-	printf("Elements after removing 1's are\n");
+	printf("Elements after removing %d are\n", arr[0]);
 	while (head)
 	{
 		printf("%d", *(int *)head->data);
