@@ -33,7 +33,7 @@ void 	ft_list_remove_if(t_list **begin_list, void *data_ref, int (*cmp)())
 			i->next = tmp->next;
 			free(tmp);
 		}
-		if (i->next)
+		else if (i->next)
 			i = i->next;
 	}
 }
