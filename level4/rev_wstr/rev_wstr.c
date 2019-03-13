@@ -13,15 +13,15 @@
 #include <unistd.h>
 #include <stdlib.h>
 
-typedef struct node
+typedef struct node // struct Decelaration
 {
 	char		*word;
 	struct node *next;
 }				t_list;
 
-t_list *head;
+t_list *head; // top of the list
 
-t_list *ft_create(char *letter)
+t_list *ft_create(char *letter) // create a new node in the list
 {
 	t_list *new;
 	if (!(new = (t_list *)malloc(sizeof(t_list))))
@@ -31,50 +31,50 @@ t_list *ft_create(char *letter)
 	return (new);
 }
 
-void push(char *letter)
+void push(char *letter) //push the word in the list
 {
 	t_list *new = ft_create(letter);
 	new->next = head;
 	head= new;
 }
 
-static int ft_space(char c)
+static int ft_space(char c) // to check if it a space
 {
 	return (c == ' ' || c == '\t');
 }
 
 void ft_rev_wstr(char *str)
 {
-	int i = 0;
-	int j;
+	int i = 0; // to iterate through each index of string
+	int j; // to store every word
 	int word_len = 0;
-	int start;
+	int start; // to find the starting index of each word
 	while (str[i])
 	{
 		j = 0;
-		while (ft_space(str[i]))
+		while (ft_space(str[i])) // till when there is a white space
 			i++;
 		start = i;
 		word_len = 0;
-		while (!ft_space(str[i]) && str[i])
+		while (!ft_space(str[i]) && str[i]) // increase i till the string has not reached the end and it's not equal to space.
 		{
 			i++;
-			word_len++;
+			word_len++; // count words
 		}
-		char *word = (char *)malloc(sizeof(char) * (word_len + 1));
-		while (word_len)
+		char *word = (char *)malloc(sizeof(char) * (word_len + 1)); // get space on heap for each word
+		while (word_len) // copy each word to the space which is been get on the heap memory
 		{
 			word[j++] = str[start++];
 			word_len--;
 		}
-		word[j] = '\0';
-		push(word);
-		if (str[i])
+		word[j] = '\0'; // assign end of each word
+		push(word); // push the word in the list
+		if (str[i]) // if the str[i] is not NULL then only increase and see the postion
 			i++;
 	}
 }
 
-void print_str(char *w)
+void print_str(char *w) // function to print each word
 {
 	int i = 0;
 	while (w[i])
@@ -84,25 +84,25 @@ void print_str(char *w)
 	}
 }
 
-void print_rev(t_list *head)
+void print_rev(t_list *head) // print via recursion 
 {
 	if (head == NULL)
 		return ;
 	if (head)
 	{
-		print_str(head->word);
-		if (head->next)
+		print_str(head->word); // first print the word because the words are store in a reverse manner in the list
+		if (head->next)// assign space till second last element because for last element we don't need space.
 			write(1, " ", 1);
-		print_rev(head->next);
+		print_rev(head->next); // call next head location and do the recursion.
 	}
 }
 
-int main (int ac, char **av)
+int main (int ac, char **av) // main driver function
 {
 	if (ac == 2)
 	{
-		ft_rev_wstr(av[1]);
-		print_rev(head);
+		ft_rev_wstr(av[1]); // to store each word in the stack implementation via list.
+		print_rev(head); //print all words from the list.
 	}
 	write(1, "\n", 1);
 	return 0;
