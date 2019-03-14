@@ -23,21 +23,21 @@ int		ft_atoi_base(const char *str, int str_base)
 	int sign = 1;
 	unsigned int nb = 0;
 	
-	while (str[i] == ' ')
+	while (str[i] == ' ') // check if there is a space 
 		i++;
-	if (str[i] == '-' || str[i] == '+')
+	if (str[i] == '-' || str[i] == '+') // if it's negative or positive 
 	{
 		if (str[i] == '-')
 			sign = -1;
 		i++;
 	}
-	while (is_correct(str[i]) && (str_base <= 16) && str[i] != 0)
+	while (is_correct(str[i]) && (str_base <= 16) && str[i] != 0) // valid base and correct char 
 	{
 		if(str[i] >= '0' && str[i] <= '9')
 			nb = nb *str_base + str[i] - '0';
-		if ((str[i] >= 'A' && str[i] <= 'F') && (abs(str_base) >= 11))
+		if ((str[i] >= 'A' && str[i] <= 'F') && (abs(str_base) >= 11)) // when its a bigger case
 			nb = nb *str_base + str[i] - 'A' + 10;
-		if ((str[i] >= 'a' && str[i] <= 'z') && (abs(str_base) >= 11))
+		if ((str[i] >= 'a' && str[i] <= 'z') && (abs(str_base) >= 11)) // when its a smaller case
 			nb = nb *str_base + str[i] - 'a' + 10;
 		i++;
 	}
