@@ -12,7 +12,7 @@
 
 #define abs(x) x < 0 ? -x : x
 
-int is_correct(char c)
+int is_correct(char c) // check if the char is vallid
 {
 	return ((c >= '0' && c <= '9') || (c >= 'A' && c <= 'F') || (c >= 'a' && c <= 'f'));
 }
