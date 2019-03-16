@@ -1,23 +1,4 @@
 # 42-School--C- Basic Exam Pisicne Questions and Solution's
-_             _
-      | '-.       .-' |
-       \'-.'-"""-'.-'/    _
-        |= _:'.':_ =|    /:`)
-        \ <6>   <6> /   /  /
-        |=   |_|   =|   |:'\
-        >\:.  "  .:/<    ) .|
-         /'-._^_.-'\    /.:/
-        /::.     .::\  /' /
-      .| '::.  .::'  |;.:/
-     /`\:.         .:/`\(
-    |:. | ':.   .:' | .:|
-    | ` |:.;     ;.:| ` |
-     \:.|  |:. .:|  |.:/
-      \ |:.|     |.:| /
-      /'|  |\   /|  |`\
-     (,,/:.|.-'-.|.:\,,)
-       (,,,/     \,,,)
-
 Repository is used to get prepaired for C - beginner exam in 42 School Silicon Valley.
 
 Solution provided are fully tested and written by me for each problem, you can look at multiple solution to each problem and get the more understanding of how thing's work.
@@ -25,3 +6,7 @@ Solution provided are fully tested and written by me for each problem, you can l
 Better understanding pull the work and use debugger(LLDB or GBD) to see how each step is working. 
 
 If you found helpful then please do follow and give a star :D -_-
+
+# Steps to clone the work
+1. git clone https://github.com/Manmeet2018/C--Basic--Examshell--42---Piscine.git
+2. you can see various directory distinguished by there difficulty levels.
