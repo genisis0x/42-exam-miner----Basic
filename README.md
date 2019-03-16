@@ -1,9 +1,9 @@
 # 42-School--C- Basic Exam Pisicne Questions and Solution's
 Repository is used to get prepaired for C - beginner exam in 42 School Silicon Valley.
 
-Solution provided are fully tested and written by me for each problem, you can look at multiple solution to each problem and get the more understanding of how thing's work.
+Solution provided are fully tested and written by me for each problem, for some problem's there are more then one solution.
 
-Better understanding pull the work and use debugger(LLDB or GBD) to see how each step is working. 
+For better understanding pull the work and use debugger(LLDB or GBD) to see how each step is working. 
 
 If you found helpful then please do follow and give a star :D -_-
 
