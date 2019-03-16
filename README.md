@@ -1,3 +1,4 @@
+# 42-School--C- Basic Exam Pisicne Questions and Solution's
 _             _
       | '-.       .-' |
        \'-.'-"""-'.-'/    _
@@ -16,8 +17,6 @@ _             _
       /'|  |\   /|  |`\
      (,,/:.|.-'-.|.:\,,)
        (,,,/     \,,,)
-
-# 42-School--C- Basic Exam Pisicne Questions and Solution's
 
 Repository is used to get prepaired for C - beginner exam in 42 School Silicon Valley.
 
