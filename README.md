@@ -9,4 +9,4 @@ If you found helpful then please do follow and give a star :D -_-
 
 # Steps to clone the work
 1. git clone https://github.com/Manmeet2018/C--Basic--Examshell--42---Piscine.git
-2. you can see various directory distinguished by there difficulty levels.
+2. local at various directory distinguished by there difficulty levels and see the subject.en.txt to undertsand the question and for solutions see the *.c files and there working.
