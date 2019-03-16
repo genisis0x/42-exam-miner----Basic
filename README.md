@@ -3,7 +3,7 @@ Repository is used to get prepaired for C - beginner exam in 42 School Silicon V
 
 Solution provided are fully tested and written by me for each problem, for some problem's there are more then one solution.
 
-For better understanding pull the work and use debugger(LLDB or GBD) to see how each step is working. 
+For better understanding pull the work and use debugger(LLDB or GBD) to see how each step works. 
 
 If you found helpful then please do follow and give a star :D -_-
 
