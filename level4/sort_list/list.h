@@ -20,5 +20,5 @@ struct s_list
 	t_list  *next;
 };
 
-t_list	*sort_list(t_list* lst, int (*cmp)(int, int));
-int		ascending(int a, int b);
+t_list	*sort_list(t_list* lst, int (*cmp)(int, int)); // defination of the function.
+int		ascending(int a, int b); // defination of the functional pointer which will be used to compare a and b.
