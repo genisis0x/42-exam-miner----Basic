@@ -20,22 +20,22 @@ int main (int ac , char **av)
 	if (ac >= 2)
 	{
 		
-			while (av[1][i] && (av[1][i] == ' ' || av[1][i] == '\t'))
+			while (av[1][i] && (av[1][i] == ' ' || av[1][i] == '\t')) // search for is_space and move the position.
 			{
 				i++;
 			}
-			j = i;
+			j = i; // this is the postion of starting of the word.
 			while (av[1][i])
 			{
-				while (av[1][i] && (av[1][i] != ' ' && av[1][i] != '\t'))
+				while (av[1][i] && (av[1][i] != ' ' && av[1][i] != '\t')) // find the next word.
 				{
 					i++;
 				}
-				while (av[1][i] && (av[1][i] == ' ' || av[1][i] == '\t'))
+				while (av[1][i] && (av[1][i] == ' ' || av[1][i] == '\t')) // find the next word.
 				{
 					i++;
 				}
-				while (av[1][i] && (av[1][i] != ' ' && av[1][i] != '\t') && (av[1][i -1] == ' ' || av[1][i - 1] == '\t'))
+				while (av[1][i] && (av[1][i] != ' ' && av[1][i] != '\t') && (av[1][i -1] == ' ' || av[1][i - 1] == '\t')) // print the word till it reaches last.
 				{
 					while (av[1][i] && (av[1][i] != ' ' && av[1][i] != '\t'))
 					{
@@ -46,7 +46,7 @@ int main (int ac , char **av)
 					i++;
 				}
 			}
-			while (av[1][j] && (av[1][j] != ' ' && av[1][j] != '\t'))
+			while (av[1][j] && (av[1][j] != ' ' && av[1][j] != '\t')) // print the first word now.
 			{
 				write (1, &av[1][j], 1);
 				j++;
