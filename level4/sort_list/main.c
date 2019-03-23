@@ -12,9 +12,9 @@
 
 #include "list.h"
 
-t_list *head;
+t_list *head; // global variable to excess the list.
 
-t_list *ft_create(int item)
+t_list *ft_create(int item) // function to create a new node in list
 {
 	t_list *new;
 
@@ -25,7 +25,7 @@ t_list *ft_create(int item)
 	return (new);
 }
 
-static int  push(int item)
+static int  push(int item) // will push the item to the list
 {
 	t_list *new = ft_create(item);
 	if (!new)
@@ -36,7 +36,7 @@ static int  push(int item)
 }
 
 
-void ft_print(t_list *h)
+void ft_print(t_list *h) // Function to print the elements in the list.
 {
 	if (h == NULL)
 		return ;
@@ -46,7 +46,7 @@ void ft_print(t_list *h)
 		ft_print(h->next);
 	}
 }
-int main (void)
+int main (void) // main driver
 {
 	int arr[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, -1};
 	push(arr[0]);
@@ -55,8 +55,8 @@ int main (void)
 	push(arr[3]);
 	push(arr[9]);
 
-	int (*cmp)(int, int) = &ascending;
-	sort_list(head, cmp);
-	ft_print(head);
+	int (*cmp)(int, int) = &ascending; // functional pointer which will compare the elements and return 1 or 0;
+	sort_list(head, cmp); // sort list will sort the elements in ascending order.
+	ft_print(head); // print all the elements in the list.
 	return 0;
 }
