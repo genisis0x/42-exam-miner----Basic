@@ -6,7 +6,7 @@ Solution provided are fully tested and written by me, for some problem's there a
 For better understanding pull the work and use debugger(LLDB or GBD) to see how each step works. 
 Any suggestion's will be highly appreciated. -_-
 
-Intra Name--> maparmar
+42 Intra Name--> maparmar
 
 # If you found helpful then please do follow and give a star :D 
 
