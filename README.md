@@ -1,5 +1,5 @@
 # 42-School--C- Basic Exam Pisicne Questions and Solution's
-Repository is used for the prepration of C - beginner exam in 42 School Silicon Valley.
+Repository is used for the prepration of C - beginner exam in 42 School Silicon Valley.It contains all of the Beginner Questions and solutions to it.
 
 Solution provided are fully tested and written by me, for some problem's there are more then one solution.
 
