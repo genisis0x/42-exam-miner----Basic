@@ -5,7 +5,7 @@ Solution provided are fully tested and written by me for each problem, for some 
 
 For better understanding pull the work and use debugger(LLDB or GBD) to see how each step works. 
 
-If you found helpful then please do follow and give a star :D -_-
+# If you found helpful then please do follow and give a star :D -_-
 
 # Steps to clone the work
 1. cd ~
