@@ -12,7 +12,7 @@
 #include <unistd.h>
 int main (int ac, char **av)
 {
-	if (ac ==2)
+	if (ac == 2)
 	{
 		while (*av[1])
 		{
