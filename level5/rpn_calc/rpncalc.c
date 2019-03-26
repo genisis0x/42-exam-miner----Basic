@@ -65,7 +65,7 @@ int do_op(int c, int d, char op)
 		return (c - d);
 	return (0);
 }
-/*********Check Dunction End***************/
+/*********Check Function End***************/
 
 int ft_rpn(char *str) // driver function
 {
