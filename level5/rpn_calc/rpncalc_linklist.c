@@ -48,7 +48,7 @@ int pop() // pop operation
 	t_list *temp = ft_create(0);
 	if (head == NULL) // stack is empty or underflow
 	{
-		return (-1);
+		return (0);
 	}
 	else
 	{
