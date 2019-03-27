@@ -124,11 +124,7 @@ int ft_rpn(char *str) // driver function
 		else if (!ft_space(*str) && is_operator(*str)) // pop and store the result in stack when the str is operator.
 		{
 			flag = 1;
-			if (head == NULL)
-				return 0;
 			int op2 = pop();
-			if (head == NULL)
-				return 0;
 			int op1 = pop();
 			char op = *str;
 			int result = do_op(op1, op2, op);
