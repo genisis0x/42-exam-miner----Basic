@@ -80,11 +80,11 @@ char    **ft_split(char *str)
 	res[j] = 0;
 	return (res);
 }
-int main (void)
+/*int main (void)
 {
 	char** res;
 	for (res = ft_split("asdf qwerty zxcv"); *res != '\0'; res++)
 		printf("'%s',", *res);
 	printf("\n");
 	return (0);
-}
+}*/
