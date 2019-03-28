@@ -12,7 +12,7 @@
 #include <unistd.h>
 # define BUFF_SIZE 2048
 
-int is_pair(char c, char d)
+int is_valid_pair(char c, char d) // check if its a valid pair or not.
 {
 	return ((c == '(' && d == ')') || (c == '{' && d == '}') || (c == '[' && d == ']'));
 }
@@ -27,7 +27,7 @@ int ft_brackets (char *str)
 		if (str[j]== '(' || str[j] == '{' || str[j] == '[') // push operation to check the opening bracket
 			stack[++position] = str[j];
 		if (str[j]== ')' || str[j] == '}' || str[j] == ']') // operation to check the closing bracket
-			if (!(is_pair(stack[position--], str[j]))) // check if the pair is valid or not 
+			if (!(is_valid_pair(stack[position--], str[j]))) // check if the pair is valid or not 
 				return (0);
 		j++;
 	}
