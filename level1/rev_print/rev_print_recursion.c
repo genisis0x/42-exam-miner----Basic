@@ -25,7 +25,7 @@ void swap(char *a, char *b) // swap function for swaping the char
 
 void ft_print(char *str, int start, int end) // driver function
 {
-	if (start > end) // when both condition fails print the whole string.  
+	if (start > end) // when condition fails print the whole string.  
 	{
 		while (*str)
 		{
