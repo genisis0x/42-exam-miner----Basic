@@ -28,9 +28,9 @@ int		main(int ac, char const **av)
 				flag = 1;
 			if (!(av[1][i] == ' ' || av[1][i] == '\t'))
 			{
-				if (flg)
+				if (flag)
 					write(1, " ", 1);
-				flg = 0;
+				flag = 0;
 				write(1, &av[1][i], 1);
 			}
 			i++;
