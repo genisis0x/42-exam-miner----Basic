@@ -63,3 +63,7 @@ void	print_memory(const void *addr, size_t size)
 		i += 16;
 	}
 }
+
+
+//#IMP Notes: 
+//The main concept of print memory is to print each byte at a time because memory in real is always store in the cpu in the token of bytes. 
