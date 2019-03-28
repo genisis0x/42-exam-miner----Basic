@@ -25,7 +25,7 @@ void swap(char *a, char *b) // swap function for swaping the char
 
 void ft_print(char *str, int start, int end) // driver function
 {
-	if (start == end || start - end == 1) // both case when the length is odd and even and the whole string is reversed  
+	if (start > end) // when both condition fails print the whole string.  
 	{
 		while (*str)
 		{
