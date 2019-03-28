@@ -21,7 +21,7 @@ int		main(int ac, char const **av)
 	{
 		i = 0;
 		while (av[1][i] == ' ' || av[1][i] == '\t')
-			i += 1;
+			i++;
 		while (av[1][i])
 		{
 			if (av[1][i] == ' ' || av[1][i] == '\t')
