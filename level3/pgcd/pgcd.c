@@ -15,10 +15,7 @@
 
 int		ft_min(int a, int b)
 {
-	if (a > b)
-		return (b);
-	else
-		return (a);
+		return (a > b) ? b : a;
 }
 
 int		pgcd(int a, int b)
