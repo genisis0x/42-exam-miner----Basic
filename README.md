@@ -27,7 +27,7 @@ Any suggestion's will be highly appreciated. -_-
 ----
 ## <kbd>^-^</kbd> Status Report :skull:
 
-char *:star2: = "Good_Question's";
+char *:star2: = "Good_Question's";\
 char *:smiling_imp: = "Very_Good_question's";
 
 >> #### Subject Status level 0
