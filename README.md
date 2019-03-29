@@ -30,7 +30,7 @@ Any suggestion's will be highly appreciated. -_-
 char *:star2: = "Good_Question's";\
 char *:smiling_imp: = "Very_Good_question's";
 
->> #### Subject Status level 0
+>> #### Subject Status level 0 :heavy_check_mark:
 1.  ft_countdown	✅
 2.	ft_print_numbers	✅
 3.	hello	✅
