@@ -8,7 +8,7 @@ Any suggestion's will be highly appreciated. -_-
 
 42 Intra Name--> maparmar
 
-# LLDB Basic Working Steps
+## LLDB Basic Working Steps:imp:
 1. gcc -Wall -Wextra -Werror filename.c -g 
 2. lldb ./a.out -- > Used to go into LLDB mode. 
 3. b main --> to set breakpoint
@@ -16,9 +16,9 @@ Any suggestion's will be highly appreciated. -_-
 5. gui ---> Graphic User Interface.
 6. use 's' key to go to each next step.
 
-# If you found helpful then please do follow and give a star :D 
+#### If you found helpful then please do follow and give a star :v: :raised_hands:
 
-# Steps to clone the work
+## Steps to clone the work
 1. cd ~
 2. git clone https://github.com/Manmeet2018/C--Basic--Examshell--42---Piscine.git
 3. cd C--Basic--Examshell--42---Piscine.git
