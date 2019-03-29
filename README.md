@@ -88,7 +88,7 @@ char *:star2: = "Good_Question's";
 1.	fprime  ✅
 2.	ft_itoa ✅
 3.	ft_list_foreach ✅
-4.	ft_list_remove_if ✅
+4.	ft_list_remove_if ✅ :star2:
 5.	ft_split  ✅
 6.	rev_wstr  ✅
 7.	rostring  ✅
