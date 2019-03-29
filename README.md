@@ -24,6 +24,9 @@ Any suggestion's will be highly appreciated. -_-
 3. cd C--Basic--Examshell--42---Piscine.git
 4. Search Questions as per level.
 5. Located at various directory distinguished by there difficulty levels and see the subject.en.txt to undertsand the question and for solutions see the *.c files and there working.
+----
+## <kbd>^-^</kbd> Status Report :skull:
+
 >> #### Subject Status level 0
 1.  ft_countdown	✅
 2.	ft_print_numbers	✅
