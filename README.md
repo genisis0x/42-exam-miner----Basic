@@ -6,7 +6,7 @@ Solution provided are fully tested and written by me, for some problem's there a
 For better understanding pull the work and use debugger(LLDB or GBD) to see how each step works. 
 Any suggestion's will be highly appreciated. -_-
 
-42 Intra Name--> ##### maparmar
+##### 42 Intra Name:maparmar
 
 ## LLDB Basic Working Steps:imp:
 1. gcc -Wall -Wextra -Werror filename.c -g 
