@@ -14,7 +14,7 @@ Any suggestion's will be highly appreciated. -_-
 3. b main --> to set breakpoint
 4. r --> run
 5. gui ---> Graphic User Interface.
-6. use 's' key to go to next step.
+6. use 's' key to go to each next step.
 
 # If you found helpful then please do follow and give a star :D 
 
