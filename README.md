@@ -27,6 +27,8 @@ Any suggestion's will be highly appreciated. -_-
 ----
 ## <kbd>^-^</kbd> Status Report :skull:
 
+char *:star2: = "Good_Question's";
+
 >> #### Subject Status level 0
 1.  ft_countdown	✅
 2.	ft_print_numbers	✅
