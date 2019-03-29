@@ -24,3 +24,28 @@ Any suggestion's will be highly appreciated. -_-
 3. cd C--Basic--Examshell--42---Piscine.git
 4. Search Questions as per level.
 5. Located at various directory distinguished by there difficulty levels and see the subject.en.txt to undertsand the question and for solutions see the *.c files and there working.
+>> #### Subject Status level 0
+1.  ft_countdown	✅
+2.	ft_print_numbers	✅
+3.	hello	✅
+4.	aff_a	✅
+5.	aff_first_param	✅
+6.  aff_last_param	✅
+7.	aff_z	✅
+8.  maff_alpha	✅
+9.  maff_revalpha	✅
+10. only_z  ✅
+11. only_a  ✅
+>> #### Subject	Status level 1
+1.	first_word	✅
+2.	ft_putstr	✅
+3.	ft_strcpy	✅
+4.	ft_strlen	✅
+5.	ft_swap	✅
+6.	repeat_alpha	✅
+7.	rev_print	✅
+8.	rot_13	✅
+9.	rotone	✅
+10.	search_and_replace	✅
+11.	ulstr	✅
+>> #### Subject Status level 2
