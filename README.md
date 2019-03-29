@@ -28,6 +28,7 @@ Any suggestion's will be highly appreciated. -_-
 ## <kbd>^-^</kbd> Status Report :skull:
 
 char *:star2: = "Good_Question's";
+char *:smiling_imp: = "Very_Good_question's";
 
 >> #### Subject Status level 0
 1.  ft_countdown	✅
@@ -89,7 +90,7 @@ char *:star2: = "Good_Question's";
 2.	ft_itoa ✅
 3.	ft_list_foreach ✅
 4.	ft_list_remove_if ✅ :star2:
-5.	ft_split  ✅
+5.	ft_split  ✅ :star2:
 6.	rev_wstr  ✅
 7.	rostring  ✅
 8.	sort_int_tab  ✅
