@@ -49,21 +49,21 @@ Any suggestion's will be highly appreciated. -_-
 10.	search_and_replace	✅
 11.	ulstr	✅
 >> #### Subject Status level 2
-1	alpha_mirror  ✅
-2	do_op ✅
-3	ft_atoi ✅
-4	ft_strcmp ✅
-5	ft_strdup ✅
-6	ft_strrev ✅
-7	inter ✅ :star2: :star2:
-8	is_power_of_2 ✅
-9	last_word ✅
-10	max ✅
-11	print_bits  ✅
-12	reverse_bits  ✅
-13	swap_bits ✅
-14	union ✅
-15	wdmatch ✅
+1.	alpha_mirror  ✅
+2.	do_op ✅
+3.	ft_atoi ✅
+4.	ft_strcmp ✅
+5.	ft_strdup ✅
+6.	ft_strrev ✅
+7.	inter ✅ :star2: :star2:
+8.	is_power_of_2 ✅
+9.	last_word ✅
+10.	max ✅
+11.	print_bits  ✅
+12.	reverse_bits  ✅
+13.	swap_bits ✅
+14.	union ✅
+15.	wdmatch ✅
 >> #### Subject Status level 3
 1.	add_prime_sum ✅
 2.	epur_str  ✅
