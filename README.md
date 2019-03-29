@@ -8,6 +8,14 @@ Any suggestion's will be highly appreciated. -_-
 
 42 Intra Name--> maparmar
 
+#LLDB Basic Steps
+1. gcc -Wall -Wextra -Werror filename.c -g 
+2. lldb ./a.out -- > Used to go into LLDB mode. 
+3. b main --> to set breakpoint
+4. r --> run
+5. gui ---> Graphic User Interface.
+6. use 'S' key to go to next step.
+
 # If you found helpful then please do follow and give a star :D 
 
 # Steps to clone the work
