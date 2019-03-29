@@ -42,7 +42,7 @@ char *:smiling_imp: = "Very_Good_question's";
 9.  maff_revalpha	✅
 10. only_z  ✅
 11. only_a  ✅
->> #### Subject	Status level 1
+>> #### Subject	Status level 1 :heavy_check_mark:
 1.	first_word	✅
 2.	ft_putstr	✅
 3.	ft_strcpy	✅
@@ -54,7 +54,7 @@ char *:smiling_imp: = "Very_Good_question's";
 9.	rotone	✅
 10.	search_and_replace	✅
 11.	ulstr	✅
->> #### Subject Status level 2
+>> #### Subject Status level 2 :heavy_check_mark:
 1.	alpha_mirror  ✅
 2.	do_op ✅
 3.	ft_atoi ✅
@@ -70,7 +70,7 @@ char *:smiling_imp: = "Very_Good_question's";
 13.	swap_bits ✅
 14.	union ✅
 15.	wdmatch ✅
->> #### Subject Status level 3
+>> #### Subject Status level 3 :heavy_check_mark:
 1.	add_prime_sum ✅
 2.	epur_str  ✅
 3.	expand_str  ✅
@@ -85,7 +85,7 @@ char *:smiling_imp: = "Very_Good_question's";
 12.	rstr_capitalizer  ✅
 13.	str_capitalizer ✅
 14.	tab_mult  ✅
->> #### Subject Status level 4
+>> #### Subject Status level 4 :heavy_check_mark:
 1.	fprime  ✅
 2.	ft_itoa ✅
 3.	ft_list_foreach ✅
@@ -96,7 +96,7 @@ char *:smiling_imp: = "Very_Good_question's";
 8.	sort_int_tab  ✅
 9.	sort_list ✅
 10. flood_fill ✅ :smiling_imp: :smiling_imp:
->> #### Subject Status level 5 :star2: :star2:
+>> #### Subject Status level 5 :star2: :star2: :heavy_check_mark:
 1.	brackets  ✅
 2.	brainfuck ✅ :smiling_imp:
 3.	ft_itoa_base  ✅
