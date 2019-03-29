@@ -97,6 +97,6 @@ Any suggestion's will be highly appreciated. -_-
 1.	brackets  ✅
 2.	brainfuck ✅ :smiling_imp:
 3.	ft_itoa_base  ✅
-4   options ✅
+4.  options ✅
 5.	print_memory ✅ :smiling_imp:
 6.	rpn_calc ✅
