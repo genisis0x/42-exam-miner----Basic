@@ -7,7 +7,7 @@ For better understanding pull the work and use debugger(LLDB or GBD) to see how 
 Any suggestion's will be highly appreciated. -_-
 
 ##### 42 Intra Name -> maparmar
-##### [:e-mail:]((mailto:manmeetparmar@outlook.com?subject=[GitHub]%20Source%20Han%20Sans))
+##### [:e-mail:](mailto:manmeetparmar@outlook.com?subject=[GitHub]%20Source%20Han%20Sans)
 
 ## LLDB Basic Working Steps:imp:
 1. gcc -Wall -Wextra -Werror filename.c -g 
