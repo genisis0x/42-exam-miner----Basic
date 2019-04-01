@@ -31,8 +31,8 @@ int	ft_atoi(const char *str)
 	return (nb * sign);
 }
 
-int main (void)
+/*int main (void)
 {
 	printf("The integer value from atoi function is %d\n", ft_atoi("123456789"));
 	return (0);
-}
+}*/
