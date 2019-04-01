@@ -23,3 +23,16 @@ int     *ft_rrange(int start, int end)
 		 r[len] = (end >= start) ? start++ : start--;
 	return (r);
 }
+
+/*#include <stdio.h>
+int main (void)
+{
+	int i = 0;
+	int *result = ft_rrange(1, 4);
+	while(i < 4)
+	{
+		printf("The value is %d\n", result[i]);
+		i++;
+	}
+	return (0);
+}*/
