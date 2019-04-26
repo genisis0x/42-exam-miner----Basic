@@ -1,4 +1,4 @@
-oid merger(int arr[], unsigned int start, unsigned int middle, unsigned int end)
+void merger(int arr[], unsigned int start, unsigned int middle, unsigned int end)
 {
     unsigned int h1 = (middle - start) + 1;
     unsigned int h2 = (end - (middle + 1)) + 1;
