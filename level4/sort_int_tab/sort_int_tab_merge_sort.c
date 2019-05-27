@@ -72,6 +72,7 @@ void sort_int_tab(int *tab, unsigned int size)
     merge_sort(tab, 0, size - 1);   
 }
 
+/*
 #include <stdio.h>
 void print_arr(int arr[], int size)
 {
@@ -90,3 +91,4 @@ int main (void)
     print_arr(arr, size);
     return 0;
 }
+*/
