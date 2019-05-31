@@ -18,6 +18,10 @@ Any suggestion's will be highly appreciated. -_-
 ##### 42 Intra Name -> maparmar
 ##### Email -> [:e-mail:](mailto:manmeetparmar@outlook.com?subject=[GitHub]%20Source%20Han%20Sans)
 
+##### INTRA SNIPPET
+<img width="1160" alt="Screen Shot 2019-05-30 at 11 35 16 PM" src="https://user-images.githubusercontent.com/35618858/58686668-42935280-8334-11e9-8886-ce60c4839161.png">
+
+
 ## LLDB Basic Working Steps:imp:
 1. gcc -Wall -Wextra -Werror filename.c -g 
 2. lldb ./a.out -- > Used to go into LLDB mode. 
