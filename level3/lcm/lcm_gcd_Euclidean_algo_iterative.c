@@ -18,7 +18,7 @@ unsigned int	lcm(unsigned int a, unsigned int b)
 }
 
 // TEST MAIN
-
+/*
 #include <stdio.h>
 #include <stdlib.h>
 int main(int ac, char **av)
@@ -29,7 +29,7 @@ int main(int ac, char **av)
 }
 	return 0;
 }
-
+*/
 // link-> https://www.geeksforgeeks.org/euclidean-algorithms-basic-and-extended/
 
 
