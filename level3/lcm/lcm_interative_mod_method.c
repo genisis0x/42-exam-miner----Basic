@@ -30,7 +30,7 @@ unsigned int	lcm(unsigned int a, unsigned int b)
 // {
 // 	if(ac >= 2)
 // 	{
-// 		printf("%d", gcd(atoi(av[1]), atoi(av[2])));
+// 		printf("%d", lcm(atoi(av[1]), atoi(av[2])));
 // }
 // 	return 0;
 // }
