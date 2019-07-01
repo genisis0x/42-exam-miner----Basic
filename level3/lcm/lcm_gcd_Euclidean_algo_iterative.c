@@ -1,14 +1,14 @@
 unsigned int gcd(unsigned int a, unsigned int b) {
-      unsigned int k = K;   // In order to state a simple, elegant loop invariant,
-      unsigned int m = M;   // we keep the formal arguments constant and use local variables to do the calculations.
-      // loop invariant: GCD(K,M) = GCD(k,m)
+      unsigned int k = a;   // In order to state a simple, elegant loop invariant,
+      unsigned int m = b;   // we keep the formal arguments constant and use local variables to do the calculations.
+      // loop invariant: GCD(a,b) = GCD(k,m)
       while (k != m) {
-         if (k > m) 
-            { k = k-m; }
-         else 
-            { m = m-k; }
+         if (k > m)
+            { k = k - m; }
+         else
+            { m = m - k; }
       }
-      // At this point, GCD(K,M) = GCD(k,m) = GCD(k,k) = k
+      // At this point, GCD(a,b) = GCD(k,m) = GCD(k,k) = k
       return k;
    }
 unsigned int	lcm(unsigned int a, unsigned int b)
@@ -19,7 +19,6 @@ unsigned int	lcm(unsigned int a, unsigned int b)
 
 // TEST MAIN
 
-/*
 #include <stdio.h>
 #include <stdlib.h>
 int main(int ac, char **av)
@@ -30,4 +29,5 @@ int main(int ac, char **av)
 }
 	return 0;
 }
-*/
+
+// link-> https://www.geeksforgeeks.org/euclidean-algorithms-basic-and-extended/
