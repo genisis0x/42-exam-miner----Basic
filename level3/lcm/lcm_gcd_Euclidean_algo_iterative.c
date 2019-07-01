@@ -31,3 +31,7 @@ int main(int ac, char **av)
 }
 
 // link-> https://www.geeksforgeeks.org/euclidean-algorithms-basic-and-extended/
+
+
+// GCD(a,b) = GCD(a - b, b) if-> (a>b)
+// GCD(a,b) = GCD(a, b - a) if-> (b>a)
