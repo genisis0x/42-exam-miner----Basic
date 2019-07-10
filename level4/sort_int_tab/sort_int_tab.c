@@ -12,6 +12,8 @@
 
 // Bubble Sort O(N*N)
 
+/**************************** PASSES IN EXAM ***************************/
+
 void sort_int_tab(int *tab, unsigned int size)
 {
 	unsigned int i = 0;
