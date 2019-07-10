@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/**************************** PASSES IN EXAM ***************************/
+
 #include "list.h"
 
 int ascending(int a, int b) // function used to compare a and b and return 1 if they are in ascending order or else 0.
