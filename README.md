@@ -73,7 +73,7 @@ char *:smiling_imp: = "Very_Good_question's";
 4.	ft_strcmp ✅
 5.	ft_strdup ✅
 6.	ft_strrev ✅
-7.	inter ✅ :star2: :star2:
+7.	inter ✅ :star2: :star2: -> used Memorization method to get it done in a O(N) time complexity
 8.	is_power_of_2 ✅
 9.	last_word ✅
 10.	max ✅
@@ -90,7 +90,7 @@ char *:smiling_imp: = "Very_Good_question's";
 5.	ft_list_size  ✅
 6.	ft_range  ✅
 7.	hidenp  ✅
-8.	lcm ✅
+8.	lcm ✅ -> Various method with iteration and Recursion (Euclidean Algorithm)
 9.	paramsum  ✅
 10.	pgcd  ✅
 11.	print_hex ✅
@@ -98,20 +98,20 @@ char *:smiling_imp: = "Very_Good_question's";
 13.	str_capitalizer ✅
 14.	tab_mult  ✅
 >> #### Subject Status level 4 :heavy_check_mark:
-1.	fprime  ✅
+1.	fprime  ✅ -> Improved time complexity by figuring out with Odd and Even number.
 2.	ft_itoa ✅
 3.	ft_list_foreach ✅
 4.	ft_list_remove_if ✅ :star2:
 5.	ft_split  ✅ :star2:
 6.	rev_wstr  ✅
 7.	rostring  ✅
-8.	sort_int_tab  ✅
+8.	sort_int_tab  ✅ -> :star2: Merge Sort o(NlogN).
 9.	sort_list ✅
 10. flood_fill ✅ :smiling_imp: :smiling_imp:
 >> #### Subject Status level 5 :star2: :star2: :heavy_check_mark:
 1.	brackets  ✅
 2.	brainfuck ✅ :smiling_imp:
-3.	ft_itoa_base  ✅
+3.	ft_itoa_base  ✅ -> Shortest Solution
 4.  options ✅
 5.	print_memory ✅ :smiling_imp:
 6.	rpn_calc ✅
