@@ -13,6 +13,8 @@
 
 // Merge Sort O(NlogN)
 
+/**************************** PASSES IN EXAM ***************************/
+
 void merger(int arr[], unsigned int start, unsigned int middle, unsigned int end)
 {
     unsigned int h1 = (middle - start) + 1;
