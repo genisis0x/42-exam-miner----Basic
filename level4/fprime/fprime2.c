@@ -1,4 +1,4 @@
-// Better Time Complexity with the elementation of evens number and Odd number.
+// Better Time Complexity with the elementation of even number and Odd number.
 
 #include <stdio.h>
 #include <stdlib.h>
