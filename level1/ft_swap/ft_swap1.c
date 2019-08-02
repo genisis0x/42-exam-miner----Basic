@@ -1,9 +1,12 @@
 void	ft_swap(int *a, int *b)
 {
-	*a ^= *b;
-        *b = *a^*b;
-        *a ^= *b;
+	*a ^= *b; // a = a xor b;
+	*b = *a^*b; // b = (a xor b xor b) or (a);
+	*a ^= *b; // a = (a xor b xor a) or(b);
 }
+
+
+// XOR of the element with the element gives 0;
 
 /*#include <stdio.h>
 int main()
