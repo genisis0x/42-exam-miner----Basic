@@ -1,10 +1,6 @@
 unsigned int gcd(unsigned int a, unsigned int b)
 {
-		if(a == 0)
-			return b;
-		if(b == 0)
-			return a;
-	return gcd((b % a ), a);
+	return b ? gcd(b, a % b) : a;
 }
 
 unsigned int	lcm(unsigned int a, unsigned int b)
