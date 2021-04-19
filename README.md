@@ -1,5 +1,5 @@
 
-### If you want to contribute then please fork the repo and provide the PR of your solution with a detail explanation.
+### If you want to contribute then please fork the repo make new Branch by the name of question_{Intra Name} and provide the PR of your solution with a detail explanation.
 
 <h2>
 
