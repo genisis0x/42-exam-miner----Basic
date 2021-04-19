@@ -2,8 +2,13 @@
 ### If you want to contribute then please fork the repo make new Branch by the name of "<i>Level_ProblemName_{Intra Name}</i>" and provide the PR of your solution with a detail explanation.
 
 ```diff
-- ! alert
-@@ If the solutions passed all the test cases and is written in C language with 42 school header included, then only it will be consider as a valid solution.@@
+- ! ALERT
++ Success will be considered if below points is taken into account.
+@@ All test cases got passed. @@ 
+@@ Solution should be in C language only. @@
+@@ 42 school header included. @@
+@@ Code should have valid comments. @@
+@@ PR (Pull Request) should be explained correctly. @@
 ```
 <h2>
 
