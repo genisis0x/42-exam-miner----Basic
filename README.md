@@ -1,8 +1,11 @@
-
-### If you want to contribute then please fork the repo make new Branch by the name of "<i>Level_ProblemName_{Intra Name}</i>" and provide the PR of your solution with a detail explanation.
-
+ 
 ```diff
 
+! If you want to contribute then please fork the repo make new Branch by the name of
+! "Level_ProblemName_{Intra Name}" and provide the PR of your solution with a detail explanation.
+```
+
+```diff
 - ! ALERT
 + Success will be considered if below points is taken into account.
 @@ All test cases got passed. @@ 
