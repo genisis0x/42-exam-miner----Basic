@@ -16,6 +16,11 @@
 ```
 <h2>
 
+```diff 
+    For Donation please use below address
+    0xF164A4DE04D55f268AdB795434BcE932Ea8Db731
+```
+
 ```diff
 - => If you found helpful then please do follow and give a star 
 ```
