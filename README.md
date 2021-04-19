@@ -1,5 +1,5 @@
 
-### If you want to contribute then please fork the repo make new Branch by the name of "<i>question_{Intra Name}</i>" and provide the PR of your solution with a detail explanation.
+### If you want to contribute then please fork the repo make new Branch by the name of "<i>Level_ProblemName_{Intra Name}</i>" and provide the PR of your solution with a detail explanation.
 
 <h2>
 
