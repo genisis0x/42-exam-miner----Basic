@@ -53,7 +53,7 @@ Any suggestion's will be highly appreciated. -_-
 
 ## Steps to clone the work
 1. cd ~
-2. git clone https://github.com/Manmeet2018/C--Basic--Examshell--42---Piscine.git
+2. git clone [https://github.com/Manmeet2018/C--Basic--Examshell--42---Piscine.git](https://github.com/genisis0x/42-exam-miner----Basic)
 3. cd C--Basic--Examshell--42---Piscine.git
 4. Search Questions as per level.
 5. Located at various directory distinguished by there difficulty levels and 
